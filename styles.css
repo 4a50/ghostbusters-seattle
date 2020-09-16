@@ -1,0 +1,64 @@
+body {
+    background-color: #000000;
+    color: white;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+header, footer {
+
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    border: solid red 1px;
+    color: #FFFFFF;
+    background-color: #000000;
+    box-sizing: border-box;
+    width: 1000px;
+}
+
+#gbLogo {
+    height: 10%;
+    width: 10%;
+    
+
+    
+}
+ul {
+    border: solid red 1px;
+    background-color: #EA1D24;
+
+}
+li:hover {
+    font-size: 110%;
+    font-weight: bold;
+}
+li {
+    border: solid red 1px;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px, 10px;    
+}
+section{
+    border: solid red 1px;
+    
+    
+}
+.events-available p{
+    color: #ffffff;
+    display: inline-block;
+    width: 600px;
+    vertical-align: top;
+    font-size: 20px;
+}
+.events-available img{
+    border-radius: 10%;
+    margin: 15px;
+}
+
+#ecto {
+    height: 60%;
+    width: 60%;    
+}
