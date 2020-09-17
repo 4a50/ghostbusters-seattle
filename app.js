@@ -1,14 +1,37 @@
 'use strict'
 
-function ScaredOfGhosts() {
-    var scaredOfGhosts = confirm("Click OK if you accept the paranormal.  If not press cancel");
-    if (scaredOfGhosts == true) {
-        alert("You have come to the RIGHT PLACE!");
+function NameThatGhost() {
+    //console.log("I am here!!!");
+    var ghostGuess = "";
+    while (ghostGuess.toUpperCase() !== 'SLIMER') {
+        ghostGuess = prompt("Enter the name of the first ghost the Ghostbusters caught");
     }
-    else {
-        location.href = "https://www.calm.com/"
+    alert('Excellent! You guessed the little spud');
+}
+function guessNumber() {
+    var correctNum = 7;
+    var correctGuess = false;
+    var userGuess = "";
+    do {
+        for (var i = 0; i < 5; i++) {
+            userGuess = prompt("Ok. Guess a number between 0 and 10.  You have " + (5 - i) + " tries remaining");
+            console.log(userGuess + "\t" + correctNum);
+            if (userGuess == correctNum) {
+                alert("Yes!  It was.  Ok now you can go to the site.  Good job rookie.");
+                correctGuess = true;
+                break;
+            }
+        }
+        if (correctGuess === false) {
+            alert("Too Many Tries!!!  Ahh, geez!  Try again why don't ya?");
+        }
+
+    }
+    while (correctGuess === false) {
+
     }
 }
+
 
 function nameInput() {
     var nameOutput;
@@ -38,7 +61,16 @@ function loc() {
 }
 
 function headerText() {
-    ScaredOfGhosts();
     document.write(nameInput());
     document.write(loc());
+    ScaredOfGhosts();
+}
+function ScaredOfGhosts() {
+    var scaredOfGhosts = confirm("Click OK if you accept the paranormal.  If not press cancel");
+    if (scaredOfGhosts == true) {
+        alert("You have come to the RIGHT PLACE!");
+    }
+    else {
+        location.href = "https://www.lingscars.com/"
+    }
 }
